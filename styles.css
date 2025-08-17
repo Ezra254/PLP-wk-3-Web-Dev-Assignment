@@ -1,0 +1,170 @@
+/* General Reset for Consistent Box Model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    background-color: #8f3b3b;
+}
+
+/* Navigation Styling with Box Model */
+.nav-container {
+    background-color: #2c3e50; /* Dark blue for contrast */
+    color: #7db1cf;
+    padding: 15px 25px; /* Padding inside nav */
+    margin: 10px 20px; /* Margin outside nav */
+    border: 3px solid #34495e; /* Border to highlight box boundary */
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container h1 {
+    font-size: 1.8em;
+    padding: 5px 10px; /* Padding for inner spacing */
+    background-color: #34495e; /* Lighter shade to show box */
+    border: 2px solid #fff; /* White border for visibility */
+}
+
+.nav-container ul {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Space between nav items */
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px; /* Padding for clickable area */
+    margin: 5px; /* Small margin for separation */
+    border: 1px solid #ecf0f1; /* Light border to define box */
+    border-radius: 5px;
+    background-color: #34495e; /* Background to visualize box */
+}
+
+.nav-link:hover {
+    background-color: #e74c3c; /* Red hover effect */
+    border-color: #c0392b;
+}
+
+/* Hero Section with Box Model */
+.hero {
+    max-width: 900px;
+    margin: 30px auto; /* Centered with outer spacing */
+    padding: 25px; /* Inner spacing */
+    background-color: #ffffff;
+    border: 4px solid #bdc3c7; /* Silver border for boundary */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 15px; /* Space below heading */
+    padding: 10px 15px; /* Inner spacing */
+    background-color: #ecf0f1; /* Light background for box */
+    border-left: 5px solid #e74c3c; /* Red accent border */
+}
+
+.hero p {
+    margin: 0 10px 20px; /* Margin for spacing */
+    padding: 12px; /* Inner padding */
+    background-color: #f7f7f7; /* Subtle background */
+    border: 1px dashed #bdc3c7; /* Dashed border for visibility */
+}
+
+/* Button Styling */
+.btn {
+    padding: 10px 20px; /* Inner spacing */
+    margin: 10px; /* Outer spacing */
+    background-color: #e74c3c; /* Red button */
+    color: #fff;
+    border: 2px solid #c0392b; /* Darker red border */
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #c0392b;
+}
+
+.card-btn {
+    padding: 8px 12px; /* Smaller padding for card buttons */
+    font-size: 0.9em;
+}
+
+/* Vehicle Section with Grid and Box Model */
+.vehicle-section {
+    max-width: 900px;
+    margin: 30px auto; /* Centered with margin */
+    padding: 20px; /* Inner spacing */
+    background-color: #ffffff;
+    border: 3px solid #7f8c8d; /* Gray border */
+    border-radius: 10px;
+}
+
+.vehicle-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    padding: 10px; /* Inner spacing */
+    background-color: #ecf0f1; /* Light background */
+    border-left: 5px solid #e74c3c; /* Red accent */
+}
+
+.vehicle-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three-column grid */
+    gap: 25px; /* Space between cards */
+}
+
+.vehicle-card {
+    background-color: #fef5f5; /* Light red background */
+    padding: 15px; /* Inner spacing */
+    margin: 10px; /* Outer spacing */
+    border: 2px solid #e74c3c; /* Red border */
+    border-radius: 8px;
+    text-align: center;
+}
+
+.vehicle-card:nth-child(2) {
+    background-color: #f5f6fe; /* Light blue for contrast */
+    border-color: #3498db; /* Blue border */
+}
+
+.vehicle-card:nth-child(3) {
+    background-color: #f5fef7; /* Light green for contrast */
+    border-color: #2ecc71; /* Green border */
+}
+
+.vehicle-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    padding: 8px; /* Inner spacing */
+    background-color: #ffffff; /* White background for contrast */
+    border: 1px solid #ccc;
+}
+
+.vehicle-card p {
+    margin-bottom: 15px;
+    padding: 10px; /* Inner spacing */
+    background-color: #f9f9f9; /* Light gray background */
+    border: 1px dashed #ccc; /* Dashed border */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin: 20px 10px; /* Outer spacing */
+    padding: 15px; /* Inner spacing */
+    background-color: #2c3e50; /* Dark blue */
+    color: #fff;
+    border: 3px solid #34495e; /* Border to match nav */
+    border-radius: 8px;
+}
